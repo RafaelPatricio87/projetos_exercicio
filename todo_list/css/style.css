@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  list-style: none;
+}
+.box{
+  background-image: url('../img/lista-de-tarefas.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 240px auto;
+  max-height: 580px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  border-radius: 8px;
+}
+.icon-bin{
+  background-image: url('../img/bin-svgrepo-com.svg');
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-size: cover;
+  
+}
+.icon-pen{
+  background-image: url('../img/pencil-svgrepo-com.svg');
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-size: cover;
+  
+}
+h1{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+#todoList {
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+}
+#todoList li{
+display: flex;
+align-items: center;
+justify-content: space-around;
+ padding: 10px;
+background-color: rgba(255, 131, 86, 0.747);
+gap: 12px;
+}
+#pen{
+  margin-left: 34px;
+}
+#pen:hover , #bin:hover{
+  background-color: rgb(127, 255, 144);
+  cursor: pointer;
+}
+
+
