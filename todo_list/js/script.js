@@ -1,22 +1,35 @@
-const list = document.getElementById('todoLIst')
-const bins = document.querySelectorAll('#bin')
-const pens = document.querySelectorAll('#pen')
+const fechar = document.querySelector('.fechar')
+const btn = document.querySelector('.btn')
+const editar = document.querySelector('.editar')
+const input_tarefa = document.querySelector('.input_tarefa')
+const enviar = document.querySelector('.enviar')
+const todoList = document.getElementById('todoList')
 
+function criarTarefa(){
+  const tarefa = input_tarefa.value
+  const p = document.createElement('p')
+  const li = document.createElement('li')
+  const div = document.createElement('div')
 
+  p.textContent = tarefa
 
-pens.forEach(pen => {
-  pen.addEventListener('click',()=> {
-    let paiElement = pen.parentElement
-    console.log(paiElement.textContent)
-  })
+  const spanPen = document.createElement('span')
+  spanPen.classList.add('icon-pen')
+  const spanBin = document.createElement('span')
+  spanBin.classList.add('icon-bin')
+  
+  div.appendChild(spanBin)
+  div.appendChild(spanPen)
+
+  li.appendChild(p)
+  li.appendChild(div)
+
+  todoList.appendChild(li)
+
+}
+
+fechar.addEventListener('click',() => {
+  editar.classList.toggle('ativo')
 })
-bins.forEach(bin => {
-  bin.addEventListener('click',()=> {
-    let paiElement = bin.parentElement
-    paiElement.remove()
-  })
-})
-
-// script ja esta pegando o evento de excluir e editar,
-// falta a parte de editar , fazer uma nova janela para  editar a tarefa
-// falta colocar um checkout de tarefa realizada
+enviar.addEventListener('click',criarTarefa)
+// criar a funcao que armazena as tarefas

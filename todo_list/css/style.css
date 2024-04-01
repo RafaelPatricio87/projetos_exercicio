@@ -16,54 +16,102 @@
   flex-direction: column;
   align-items: center;
   overflow: auto;
+  padding: 20px 40px;
   border-radius: 8px;
-}
-.icon-bin{
-  background-image: url('../img/bin-svgrepo-com.svg');
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-size: cover;
-  
-}
-.icon-pen{
-  background-image: url('../img/pencil-svgrepo-com.svg');
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-size: cover;
-  
+  position: relative;
 }
 h1{
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-weight: bold;
-  font-size: 2.4rem;
+  margin: 10px;
+  color: rgb(20, 158, 27);
 }
-#todoList {
-  font-size: 1.4rem;
-  margin-bottom: 50px;
+.tarefas{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 14px;
+  width: 100%;
+  margin-bottom: 50px;
 }
-#todoList li{
-display: flex;
-align-items: center;
-justify-content: space-around;
- padding: 10px;
-background-color: rgba(255, 131, 86, 0.747);
-gap: 12px;
+.tarefas input{
+  outline: none;
+  width: 500px;
+  font-size: 1.4rem;
+  padding: 6px;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
-#pen{
-  margin-left: 34px;
+.enviar{
+  background-color: rgb(63, 140, 255);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
-#pen:hover , #bin:hover{
-  background-color: rgb(127, 255, 144);
+.editar{
+  border-radius: 8px;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  background-color: white;
+  display: none;
+}
+.btn{
+  background-color: rgb(63, 140, 255);
+  color: white;
+  border: none;
+  position: absolute;
+   bottom: 10%;
+  right: 4%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 1.2rem;
   cursor: pointer;
 }
-
+.fechar{
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: cornsilk;
+  color: red;
+  padding: 4px;
+  top: -10%;
+  right: -2%;
+}
+.ativo{
+  display: none;
+}
+#todoList{
+  width: 100%;
+}
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: bisque;
+  margin-bottom: 10px;
+  border: solid rgb(252, 218, 177) ;
+  border-radius: 6px;
+}
+.icon-pen{
+  background: url('../img/pencil-svgrepo-com.svg');
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  padding: 4px;
+  cursor: pointer;
+}
+.icon-bin{
+  background: url('../img/bin-svgrepo-com.svg');
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 4px;
+  cursor: pointer;
+}
 
