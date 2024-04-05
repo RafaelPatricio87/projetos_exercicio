@@ -83,16 +83,19 @@ h1{
 }
 #todoList{
   width: 100%;
+  
 }
 #todoList li {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10px;
   background-color: bisque;
   margin-bottom: 10px;
   border: solid rgb(252, 218, 177) ;
   border-radius: 6px;
+  overflow: hidden;
 }
 .icon-pen{
   background: url('../img/pencil-svgrepo-com.svg');
@@ -114,4 +117,25 @@ h1{
   padding: 4px;
   cursor: pointer;
 }
+.div2{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+} 
+.div2 p {
+  font-size: 1.2rem;
+} 
+.feito{
+  text-decoration: line-through;
+  color: green;
+}
+.check {
+  margin-top: 5px;
+cursor: pointer;
+width: 20px;
+height: 30px;
+}
+
 
