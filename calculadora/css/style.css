@@ -34,6 +34,10 @@ h1{
   grid-template-columns: repeat(4,1fr);
   gap: 8px;
 }
+.ce{
+  grid-column: 1/3;
+}
+
 button{
   font-size: 1.4rem;
   border: none;
